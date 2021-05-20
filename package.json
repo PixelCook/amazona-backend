@@ -1,0 +1,19 @@
+{
+  "name": "amazona-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PixelCook/amazona-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PixelCook/amazona-backend/issues"
+  },
+  "homepage": "https://github.com/PixelCook/amazona-backend#readme"
+}
