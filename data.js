@@ -7,7 +7,8 @@ export default {
         image: '/images/d1.jpeg',
         category: 'shirts',
         rating: 4.5,
-        reviewNum: 10
+        reviewNum: 10,
+        countInStock: 0, 
 },
 {
     _id: '2',
@@ -17,7 +18,8 @@ export default {
     image: '/images/d1.jpeg',
     category: 'shirts',
     rating: 5,
-    reviewNum: 10
+    reviewNum: 10,
+    countInStock: 2,
 },
 {
     _id: '3',
@@ -27,6 +29,7 @@ export default {
     category: 'shirts',
     image: '/images/d1.jpeg',
     rating: 4.5,
-    reviewNum: 10
+    reviewNum: 10,
+    countInStock: 1,
 }],
 }
