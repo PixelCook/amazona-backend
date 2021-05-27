@@ -30,6 +30,6 @@ export default {
     image: '/images/d1.jpeg',
     rating: 4.5,
     reviewNum: 10,
-    countInStock: 1,
+    countInStock: 8,
 }],
 }
