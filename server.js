@@ -1,19 +1,23 @@
 import express from "express";
 import data from "./data";
-import dotenv from "dotenv"
-import config from "./config"
-import mongoose from "mongoose"
+import dotenv from "dotenv";
+import config from "./config";
+import mongoose from "mongoose";
+import userRoute from "./routes/createUserRoutes";
 
-dotenv.config()
+dotenv.config();
 
-const MONGODUB_URL = config.MONDGODB_URL
-mongoose.connect(mongodbUrl, {
+const mongodbUrl = config.MONDGODB_URL;
+mongoose
+  .connect(mongodbUrl, {
     useNewUrlParser: true,
-
-}).catch(error => console.log(error.reason))
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+  })
+  .catch((error) => console.log(error.reason));
 
 const app = express();
-
+app.use("/api/users", userRoute);
 app.get("/api/products/:id", (req, res) => {
   const productId = req.params.id;
   const product = data.products.find((x) => x._id === productId);
